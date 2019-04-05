@@ -1,0 +1,8 @@
+.overlay{
+    position: fixed;
+    background: #00000066;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@accubits/spinner",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/accubits/spinner.git"
+  },
+  "author": {
+    "name": "Ditto P S",
+    "email": "dittops@gmail.com"
+  },
+  "keywords": ["angular", "spinner", "loader", "loading-indicator"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/accubits/spinner.git/issues"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  }
+}
