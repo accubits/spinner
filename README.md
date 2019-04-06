@@ -56,8 +56,8 @@ Now use in your template
 
 ## Spinner Service
 
-- `SpinnerService.show()`  Shows the spinner
-- `SpinnerService.hide()`  Hides the spinner
+- `SpinnerService.show()` 
+- `SpinnerService.hide()` 
 
 ## Spinner Component
 
@@ -74,9 +74,7 @@ Now use in your template
 ## Custom  HTML
 
 ```html
-<ab-spinner
-        [type]="custom"
->
+<ab-spinner [type]="custom">
   <p class="spinner">
     <img src="assets/images/loader.gif" />
     <span>LOADER....</span>
