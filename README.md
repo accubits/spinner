@@ -1,27 +1,61 @@
-# SpinnerLib
+## Installation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+`spinner` is available via [npm](https://www.npmjs.com/package/@accubits/spinner)
 
-## Development server
+Using npm:
+```bash
+$ npm install @accubits/spinner --save
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+Import `SpinnerModule` in  in the root module(`AppModule`):
+```typescript
+// Import library module
+import { SpinnerModule } from '@accubits/spinner';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+@NgModule({
+  imports: [
+    // ...
+    SpinnerModule
+  ]
+})
+export class AppModule { }
+```
 
-## Build
+Add `SpinnerService` service wherever you want to use the `ngx-spinner`.
+```typescript
+import { SpinnerService } from '@accubits/spinner';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+class AppComponent implements OnInit {
+  constructor(private spinner: SpinnerService) { }
 
-## Running unit tests
+  ngOnInit() {
+    /** spinner starts on init */
+    this.spinner.show();
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    setTimeout(() => {
+        /** spinner ends after 5 seconds */
+        this.spinner.hide();
+    }, 5000);
+  }
+}
+```
 
-## Running end-to-end tests
+Now use in your template
+```html
+<ab-spinner></ab-spinner>
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Spinner Service
 
-## Further help
+- `SpinnerService.show()`  Shows the spinner
+- `SpinnerService.hide()`  Hides the spinner
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Spinner Component
+
+```html
+<ab-spinner
+  backgroundColor="#00000066">
+</ab-spinner>
+```
