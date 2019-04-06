@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    background: #333;
+    color: #999999;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+select{
+
+}
+input, select, textarea{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #999;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+}
+input:focus{
+    border-bottom: 1px solid #0894ce;
+}

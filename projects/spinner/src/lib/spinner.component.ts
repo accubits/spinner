@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {SpinnerService} from './spinner.service';
+import {SPINNERS} from './spinner.enum';
 
 @Component({
     selector: 'ab-spinner',
@@ -8,8 +9,15 @@ import {SpinnerService} from './spinner.service';
 })
 export class SpinnerComponent implements OnInit {
 
+    @Input() backgroundColor = '#00000066';
+    @Input() color = '#ffffff';
+    @Input() type = 'ripple';
+    @Input() loadingText = '';
+
     private subscription;
     public isVisible: Boolean = false;
+    public divArray = [];
+    public spinnerClass = 'ripple';
 
     constructor(
         private spinnerService: SpinnerService
@@ -21,6 +29,18 @@ export class SpinnerComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.initSpinner();
+    }
+
+    getClass() {
+        const divCount = SPINNERS[this.type];
+        this.divArray = Array(divCount);
+
+        return 'ab-' + this.type;
+    }
+
+    initSpinner() {
+        this.spinnerClass = this.getClass();
     }
 
 }

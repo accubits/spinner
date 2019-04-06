@@ -9,14 +9,16 @@ import {SpinnerService} from 'spinner';
 export class AppComponent {
     title = 'spinner-lib';
 
+    public bgColor = '#00000066';
+    public color = '#ffffff';
+    public loaderType = 'ripple';
+    public loadingText = 'Loading...';
+    public customContent = '<p class="spinner"><span>hello world!!!</span></p>';
+
     constructor(
         private spinnerService: SpinnerService
     ) {
-        this.spinnerService.show();
 
-        setTimeout(() => {
-            this.spinnerService.hide();
-        }, 5000);
     }
 
     show() {
@@ -24,6 +26,6 @@ export class AppComponent {
 
         setTimeout(() => {
             this.spinnerService.hide();
-        }, 5000);
+        }, 3000);
     }
 }

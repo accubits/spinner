@@ -1,3 +1,9 @@
-<div class="overlay" *ngIf="isVisible">
+<div class="overlay" *ngIf="isVisible" [ngStyle]="{'background-color': backgroundColor}">
+    <div class="spinner_wrap" *ngIf="type != 'custom'">
+        <div class="spinner_anim" [class]="spinnerClass" [style.color]="color">
+            <div *ngFor="let item of divArray"></div>
+        </div>
+        <p>{{loadingText}}</p>
+    </div>
     <ng-content></ng-content>
 </div>
