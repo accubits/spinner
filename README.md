@@ -1,3 +1,6 @@
+# Spinner
+A Library to easily create your own custom loaders for pages. The spinner allows create your own HTML and use the SpinnerService to control it in your whole project.
+
 ## Installation
 
 Install `spinner` via [npm](https://www.npmjs.com/package/@accubits/spinner)
@@ -26,7 +29,8 @@ Add `SpinnerService` service where you want to use the `spinner`.
 ```typescript
 import { SpinnerService } from '@accubits/spinner';
 
-class AppComponent implements OnInit {
+class ExampleComponent implements OnInit {
+
   constructor(private spinner: SpinnerService) { }
 
   ngOnInit() {
