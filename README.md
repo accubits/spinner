@@ -1,6 +1,10 @@
 # Spinner
 A Library to easily create your own custom loaders for pages. The spinner allows create your own HTML and use the SpinnerService to control it in your whole project.
 
+## Demo
+
+View the demo [here](http://52.220.41.10/spinner)
+
 ## Installation
 
 Install `spinner` via [npm](https://www.npmjs.com/package/@accubits/spinner)
