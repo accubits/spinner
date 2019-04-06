@@ -63,6 +63,23 @@ Now use in your template
 
 ```html
 <ab-spinner
-  backgroundColor="#00000066">
+        [type]="ripple" // ripple or custom
+        [backgroundColor]="#00000066" //hex or rgba
+        [color]="#ffffff" //hex or rgba
+        [loadingText]="Loading"
+>
+</ab-spinner>
+```
+
+## Custom  HTML
+
+```html
+<ab-spinner
+        [type]="custom"
+>
+  <p class="spinner">
+    <img src="assets/images/loader.gif" />
+    <span>LOADER....</span>
+  </p>
 </ab-spinner>
 ```
