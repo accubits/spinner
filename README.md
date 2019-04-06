@@ -1,8 +1,7 @@
 ## Installation
 
-`spinner` is available via [npm](https://www.npmjs.com/package/@accubits/spinner)
+Install `spinner` via [npm](https://www.npmjs.com/package/@accubits/spinner)
 
-Using npm:
 ```bash
 $ npm install @accubits/spinner --save
 ```
@@ -23,7 +22,7 @@ import { SpinnerModule } from '@accubits/spinner';
 export class AppModule { }
 ```
 
-Add `SpinnerService` service wherever you want to use the `ngx-spinner`.
+Add `SpinnerService` service where you want to use the `spinner`.
 ```typescript
 import { SpinnerService } from '@accubits/spinner';
 
@@ -31,13 +30,13 @@ class AppComponent implements OnInit {
   constructor(private spinner: SpinnerService) { }
 
   ngOnInit() {
-    /** spinner starts on init */
+    
     this.spinner.show();
 
     setTimeout(() => {
-        /** spinner ends after 5 seconds */
+       
         this.spinner.hide();
-    }, 5000);
+    }, 3000);
   }
 }
 ```
