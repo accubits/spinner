@@ -63,10 +63,10 @@ Now use in your template
 
 ```html
 <ab-spinner
-        [type]="ripple" // ripple or custom
-        [backgroundColor]="#00000066" //hex or rgba
-        [color]="#ffffff" //hex or rgba
-        [loadingText]="Loading"
+        type="ripple" // ripple or custom
+        backgroundColor="#00000066" //hex or rgba
+        color="#ffffff" //hex or rgba
+        loadingText="Loading"
 >
 </ab-spinner>
 ```
@@ -74,7 +74,7 @@ Now use in your template
 ## Custom  HTML
 
 ```html
-<ab-spinner [type]="custom">
+<ab-spinner type="custom">
   <p class="spinner">
     <img src="assets/images/loader.gif" />
     <span>LOADER....</span>
