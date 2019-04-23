@@ -63,7 +63,7 @@ Now use in your template
 
 ```html
 <ab-spinner
-        type="ripple" // ripple or custom
+        type="ripple" // ripple, bounce or custom
         backgroundColor="#00000066" //hex or rgba
         color="#ffffff" //hex or rgba
         loadingText="Loading"
