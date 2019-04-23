@@ -76,3 +76,39 @@
     transform: translate(-50px, -50px) scale(0.5) translate(50px, 50px);
 }
 /***** END ab-ripple ANIMATION *****/
+
+
+/***** START bounce ANIMATION *****/
+
+@keyframes ab-bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    to {
+      transform: translate3d(0, 100px, 0);
+    }
+  }
+  
+  @-webkit-keyframes ab-bounce {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+    
+      to {
+        transform: translate3d(0, 100px, 0);
+      }
+    }
+  
+  .ab-bounce div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: currentColor;
+    animation: ab-bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+  }
+  
+  /***** END bounce ANIMATION *****/
