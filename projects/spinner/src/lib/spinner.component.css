@@ -131,9 +131,9 @@
 /***** Start twister ANIMATION *****/
 .ab-twister {
     position: relative;
-    width: 230px;
+    width: 112px;
     margin: 0 auto;
-    top: calc(50% - 200px);
+   
 }
 
 .ab-twister h4 {
@@ -146,12 +146,12 @@
 }
 
 .ab-twister div:nth-child(1) {
-    width: 200px;
-    height: 200px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    border: 14px solid transparent;
-    border-top: 13px solid #86a8c4ed;
-    border-left: 13px solid #86a8c4ed;
+    border: 7px solid transparent;
+    border-top: 7px solid #86a8c4ed;
+    border-left: 7px solid #86a8c4ed;
     -webkit-animation: spin1 .8s linear infinite;
     animation: spin1 .8s linear infinite;
 
@@ -160,28 +160,28 @@
 }
 
 .ab-twister div:nth-child(2) {
-    width: 170px;
-    height: 170px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     border: 10px solid transparent;
     border-top: 10px solid #618fb2;
     position: absolute;
-    top: 19px;
-    left: 19px;
+    top: 10px;
+    left: 10px;
     -webkit-animation: spin2 .6s linear infinite;
     animation: spin2 .6s linear infinite;
 
 }
 
 .ab-twister div:nth-child(3) {
-    width: 140px;
-    height: 140px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     border: 6px solid transparent;
     border-top: 6px solid #3c7199;
     position: absolute;
-    top: 37px;
-    left: 37px;
+    top: 22px;
+    left: 22px;
     -webkit-animation: spin1 .75s linear infinite reverse;
     animation: spin1 .75s linear infinite reverse;
 
@@ -189,14 +189,14 @@
 }
 
 .ab-twister div:nth-child(4) {
-    width: 114px;
-    height: 114px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: 6px solid transparent;
     border-top: 6px solid #092a43;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 33px;
+    left: 33px;
     -webkit-animation: spin1 2s linear infinite;
     animation: spin1 2s linear infinite;
 
@@ -204,32 +204,20 @@
 }
 
 .ab-twister div:nth-child(5) {
-    width: 55px;
-    height: 55px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     border-radius: 50%;
     border: 6px solid transparent;
-    border-top: 6px solid #092a43;
+    border-top: 6px solid #fff;
     position: absolute;
-    top: 77px;
-    left: 79px;
+    top: 43px;
+    left: 43px;
      -webkit-animation: spin1 .75s linear infinite reverse;
     animation: spin1 .75s linear infinite reverse;
 }
 
-.ab-twister div:nth-child(6) {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border-radius: 50%;
-    border: 6px solid transparent;
-    border-top: 6px solid #96b5cf;
-    position: absolute;
-    top: 86px;
-    left: 90px;
-    -webkit-animation: spin1 1s linear infinite;
-    animation: spin1 .4s linear infinite;
-}
+
 
 .loader_body {
     height: 100vh;
@@ -239,10 +227,6 @@
 
 
 }
-
-
-
-
 
 @-webkit-keyframes spin2 {
     0% {
