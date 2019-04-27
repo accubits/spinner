@@ -24,7 +24,6 @@ export class AppComponent {
 
     show() {
         this.spinnerService.show();
-
         setTimeout(() => {
             this.spinnerService.hide();
         }, 3000);

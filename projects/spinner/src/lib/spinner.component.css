@@ -128,3 +128,168 @@
 }
 
 /***** END bounce ANIMATION *****/
+/***** Start twister ANIMATION *****/
+.ab-twister {
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+    top: calc(50% - 200px);
+}
+
+.ab-twister h4 {
+    font-size: 35px;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 37px 0px;
+    letter-spacing: 10px;
+
+}
+
+.ab-twister div:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 14px solid transparent;
+    border-top: 13px solid #86a8c4ed;
+    border-left: 13px solid #86a8c4ed;
+    -webkit-animation: spin1 .8s linear infinite;
+    animation: spin1 .8s linear infinite;
+
+
+
+}
+
+.ab-twister div:nth-child(2) {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top: 10px solid #618fb2;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    -webkit-animation: spin2 .6s linear infinite;
+    animation: spin2 .6s linear infinite;
+
+}
+
+.ab-twister div:nth-child(3) {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top: 6px solid #3c7199;
+    position: absolute;
+    top: 37px;
+    left: 37px;
+    -webkit-animation: spin1 .75s linear infinite reverse;
+    animation: spin1 .75s linear infinite reverse;
+
+
+}
+
+.ab-twister div:nth-child(4) {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top: 6px solid #092a43;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    -webkit-animation: spin1 2s linear infinite;
+    animation: spin1 2s linear infinite;
+
+
+}
+
+.ab-twister div:nth-child(5) {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top: 6px solid #092a43;
+    position: absolute;
+    top: 77px;
+    left: 79px;
+     -webkit-animation: spin1 .75s linear infinite reverse;
+    animation: spin1 .75s linear infinite reverse;
+}
+
+.ab-twister div:nth-child(6) {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-top: 6px solid #96b5cf;
+    position: absolute;
+    top: 86px;
+    left: 90px;
+    -webkit-animation: spin1 1s linear infinite;
+    animation: spin1 .4s linear infinite;
+}
+
+.loader_body {
+    height: 100vh;
+    position: fixed;
+    background: #000;
+    width: 100%;
+
+
+}
+
+
+
+
+
+@-webkit-keyframes spin2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes spin1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+@keyframes spin1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/***** END twister ANIMATION *****/
