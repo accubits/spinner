@@ -60,6 +60,17 @@ Now use in your template
 - `SpinnerService.show()`  
 - `SpinnerService.hide()`  
 
+## Custom  HTML
+
+```html
+<ab-spinner type="custom">
+  <p class="spinner">
+    <img src="assets/images/loader.gif" />
+    <span>LOADER....</span>
+  </p>
+</ab-spinner>
+```
+
 ## Additional Options
 
 Go to [GITHUB](https://github.com/accubits/spinner) for more options
