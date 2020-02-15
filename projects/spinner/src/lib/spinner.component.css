@@ -27,7 +27,6 @@
         height: 0;
         opacity: 1;
     }
-
     100% {
         top: 18px;
         left: 18px;
@@ -45,7 +44,6 @@
         height: 0;
         opacity: 1;
     }
-
     100% {
         top: 18px;
         left: 18px;
@@ -86,6 +84,7 @@
     transform: translate(-50px, -50px) scale(0.5) translate(50px, 50px);
 }
 
+
 /***** END ab-ripple ANIMATION *****/
 
 
@@ -95,7 +94,6 @@
     from {
         transform: translate3d(0, 0, 0);
     }
-
     to {
         transform: translate3d(0, 100px, 0);
     }
@@ -105,7 +103,6 @@
     from {
         transform: translate3d(0, 0, 0);
     }
-
     to {
         transform: translate3d(0, 100px, 0);
     }
@@ -124,17 +121,20 @@
     background-color: currentColor;
     animation: ab-bounce 0.5s;
     animation-direction: alternate;
-    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
     animation-iteration-count: infinite;
 }
 
+
 /***** END bounce ANIMATION *****/
+
+
 /***** Start twister ANIMATION *****/
+
 .ab-twister {
     position: relative;
     width: 112px;
     margin: 0 auto;
-   
 }
 
 .ab-twister h4 {
@@ -143,7 +143,6 @@
     font-family: sans-serif;
     margin: 37px 0px;
     letter-spacing: 10px;
-
 }
 
 .ab-twister div:nth-child(1) {
@@ -153,11 +152,8 @@
     border: 7px solid transparent;
     border-top: 7px solid #86a8c4ed;
     border-left: 7px solid #86a8c4ed;
-    -webkit-animation: spin1 .8s linear infinite;
-    animation: spin1 .8s linear infinite;
-
-
-
+    -webkit-animation: spin1 0.8s linear infinite;
+    animation: spin1 0.8s linear infinite;
 }
 
 .ab-twister div:nth-child(2) {
@@ -169,9 +165,8 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    -webkit-animation: spin2 .6s linear infinite;
-    animation: spin2 .6s linear infinite;
-
+    -webkit-animation: spin2 0.6s linear infinite;
+    animation: spin2 0.6s linear infinite;
 }
 
 .ab-twister div:nth-child(3) {
@@ -183,10 +178,8 @@
     position: absolute;
     top: 22px;
     left: 22px;
-    -webkit-animation: spin1 .75s linear infinite reverse;
-    animation: spin1 .75s linear infinite reverse;
-
-
+    -webkit-animation: spin1 0.75s linear infinite reverse;
+    animation: spin1 0.75s linear infinite reverse;
 }
 
 .ab-twister div:nth-child(4) {
@@ -200,8 +193,6 @@
     left: 33px;
     -webkit-animation: spin1 2s linear infinite;
     animation: spin1 2s linear infinite;
-
-
 }
 
 .ab-twister div:nth-child(5) {
@@ -214,30 +205,24 @@
     position: absolute;
     top: 43px;
     left: 43px;
-     -webkit-animation: spin1 .75s linear infinite reverse;
-    animation: spin1 .75s linear infinite reverse;
+    -webkit-animation: spin1 0.75s linear infinite reverse;
+    animation: spin1 0.75s linear infinite reverse;
 }
-
-
 
 .loader_body {
     height: 100vh;
     position: fixed;
     background: #000;
     width: 100%;
-
-
 }
 
 @-webkit-keyframes spin2 {
     0% {
         -webkit-transform: rotate(0deg);
     }
-
     50% {
         -webkit-transform: rotate(270deg);
     }
-
     100% {
         -webkit-transform: rotate(0deg);
     }
@@ -247,11 +232,9 @@
     0% {
         transform: rotate(0deg);
     }
-
     50% {
         transform: rotate(270deg);
     }
-
     100% {
         -webkit-transform: rotate(0deg);
     }
@@ -261,34 +244,38 @@
     0% {
         -webkit-transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(360deg);
     }
-
 }
 
 @keyframes spin1 {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
+
+
 /***** END twister ANIMATION *****/
+
+
 /***** START roller ANIMATION *****/
+
 .ab-roller {
     display: inline-block;
     position: relative;
     width: 64px;
     height: 64px;
 }
+
 .ab-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     transform-origin: 32px 32px;
 }
+
 .ab-roller div:after {
     content: " ";
     display: block;
@@ -299,62 +286,79 @@
     background: #fff;
     margin: -3px 0 0 -3px;
 }
+
 .ab-roller div:nth-child(1) {
     animation-delay: -0.036s;
 }
+
 .ab-roller div:nth-child(1):after {
     top: 50px;
     left: 50px;
 }
+
 .ab-roller div:nth-child(2) {
     animation-delay: -0.072s;
 }
+
 .ab-roller div:nth-child(2):after {
     top: 54px;
     left: 45px;
 }
+
 .ab-roller div:nth-child(3) {
     animation-delay: -0.108s;
 }
+
 .ab-roller div:nth-child(3):after {
     top: 57px;
     left: 39px;
 }
+
 .ab-roller div:nth-child(4) {
     animation-delay: -0.144s;
 }
+
 .ab-roller div:nth-child(4):after {
     top: 58px;
     left: 32px;
 }
+
 .ab-roller div:nth-child(5) {
     animation-delay: -0.18s;
 }
+
 .ab-roller div:nth-child(5):after {
     top: 57px;
     left: 25px;
 }
+
 .ab-roller div:nth-child(6) {
     animation-delay: -0.216s;
 }
+
 .ab-roller div:nth-child(6):after {
     top: 54px;
     left: 19px;
 }
+
 .ab-roller div:nth-child(7) {
     animation-delay: -0.252s;
 }
+
 .ab-roller div:nth-child(7):after {
     top: 50px;
     left: 14px;
 }
+
 .ab-roller div:nth-child(8) {
     animation-delay: -0.288s;
 }
+
 .ab-roller div:nth-child(8):after {
     top: 45px;
     left: 10px;
 }
+
 @keyframes lds-roller {
     0% {
         transform: rotate(0deg);
@@ -363,4 +367,109 @@
         transform: rotate(360deg);
     }
 }
+
+
 /***** END roller ANIMATION *****/
+
+
+/***** START ab-ellipsis ANIMATION *****/
+
+.ab-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.ab-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.ab-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: ab-ellipsis1 0.6s infinite;
+}
+
+.ab-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: ab-ellipsis2 0.6s infinite;
+}
+
+.ab-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: ab-ellipsis2 0.6s infinite;
+}
+
+.ab-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: ab-ellipsis3 0.6s infinite;
+}
+
+@keyframes ab-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ab-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes ab-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+
+/***** END ab-ellipsis ANIMATION *****/
+
+
+/***** START ab-dual-ring ANIMATION *****/
+
+.ab-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.ab-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ab-dual-ring 1.2s linear infinite;
+}
+
+@keyframes ab-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/***** END ab-ellipsis ANIMATION *****/

@@ -3,5 +3,7 @@ export const SPINNERS = {
     'ripple': 2,
     'bounce': 1,
     'roller': 8,
-    'custom': 0
+    'custom': 0,
+    'ellipsis': 4,
+    'dual-ring': 0
 };

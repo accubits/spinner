@@ -1,6 +1,6 @@
-import {Component} from '@angular/core';
-import {SpinnerService} from '@accubits/spinner';
-// import {SpinnerService} from '../../dist/spinner';
+import { Component } from '@angular/core';
+import { SpinnerService } from '@accubits/spinner';
+// import { SpinnerService } from '../../dist/spinner';
 
 @Component({
     selector: 'app-root',

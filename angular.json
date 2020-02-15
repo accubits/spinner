@@ -166,5 +166,8 @@
       }
     }
   },
-  "defaultProject": "spinner-lib"
+  "defaultProject": "spinner-lib",
+  "cli": {
+    "analytics": "b3ee4f3d-1bdf-42cb-b2a6-185a877fe7c7"
+  }
 }
