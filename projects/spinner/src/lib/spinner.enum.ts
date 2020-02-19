@@ -5,5 +5,6 @@ export const SPINNERS = {
     'roller': 8,
     'custom': 0,
     'ellipsis': 4,
-    'dual-ring': 0
+    'dual-ring': 0,
+    'wave': 3
 };
