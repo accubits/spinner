@@ -26,6 +26,6 @@ export class AppComponent {
         this.spinnerService.show();
         setTimeout(() => {
             this.spinnerService.hide();
-        }, 3000);
+        }, 300000);
     }
 }

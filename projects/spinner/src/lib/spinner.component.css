@@ -476,10 +476,9 @@
 
 .ab-wave {
 	position:relative;
-	margin-top:50vh;
 	text-align:center;
 	width:100px;
-	height:100px;
+	/* height:100px; */
 	margin-left: auto;
     margin-right: auto;
 }
